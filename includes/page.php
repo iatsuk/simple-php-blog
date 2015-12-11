@@ -6,11 +6,11 @@
 		<title><?php echo($pageData["title"]); ?></title>
 	</head>
 	<body>
+		<div><a href="javascript:history.back();">Назад</a></div>
 		<div>
-			<a href="javascript:history.back();">Назад</a>
-		</div>
-		<div>
-			<h2><?php echo($pageData["title"]); ?></h2>
+			<a href="?p=<?php echo($pageData["id"]); ?>">
+				<h2><?php echo($pageData["title"]); ?></h2>
+			</a>
 		</div>
 		<div>
 			<?php echo($pageData["content"]); ?>

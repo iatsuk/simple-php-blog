@@ -1,4 +1,5 @@
 <?php
+	// htmlspecialchars, наверное, нигде не нужен?
 	// Подключаемся к MySQL
 	require_once("mysql.php");
 	yav_mysql_init();
@@ -34,7 +35,7 @@
 		require_once("includes/search.php");		// Поиск
 	} else if (isset($_GET["cat"])) {
 		$pageData = yav_mysql_byCat($_GET["cat"]);
-		require_once("includes/main.php");			// Новости по категории
+		require_once("includes/search.php");		// Новости по категории
 	} else {
 		$pageData = yav_mysql_show(100, 0);
 		require_once("includes/main.php");			// Главная страница

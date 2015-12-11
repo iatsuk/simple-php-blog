@@ -30,7 +30,9 @@
 		<br />
 		<?php for ($i = 0; $i < count($pageData); $i++) {?>
 			<div>
-				<h2><?php echo($pageData[$i]["title"]); ?></h2>
+				<a href="?p=<?php echo($pageData[$i]["id"]); ?>">
+					<h2><?php echo($pageData[$i]["title"]); ?></h2>
+				</a>
 			</div>
 			<div>
 				<?php echo($pageData[$i]["content"]); ?>

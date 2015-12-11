@@ -18,7 +18,10 @@
 			</tr>
 			<?php for ($i = 0; $i < count($pageData); $i++) {?>
 			<tr>
-				<td><?php echo($pageData[$i]["title"]); ?></td>
+				<td><a href="?p=<?php echo($pageData[$i]["id"]); ?>">
+					<?php echo($pageData[$i]["title"]); ?>
+					</a>
+				</td>
 				<td><center><?php echo($pageData[$i]["category"]); ?></center></td>
 				<td><center><?php echo($pageData[$i]["date"]); ?></center></td>
 				<td><center><a href="/?edit=<?php echo($pageData[$i]["id"]); ?>">Изм</a></center></td>

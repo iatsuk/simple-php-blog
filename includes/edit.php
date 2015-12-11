@@ -16,6 +16,7 @@
 		<title>Редактирование записи <?php echo($title); ?></title>
 	</head>
 	<body>
+		<div> <a href="javascript:history.back();">Назад</a> </div>
 		<center><form action="/" method="post">
 			<?php if ($pageData == NULL) { ?>
 				<p><input type="hidden" name="add" value=""></p>

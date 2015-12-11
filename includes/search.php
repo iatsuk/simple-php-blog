@@ -6,15 +6,15 @@
 		<title>Результаты поиска</title>
 	</head>
 	<body>
-		<div>
-			<a href="javascript:history.back();">Назад</a>
-		</div>
+		<div><a href="javascript:history.back();">Назад</a></div>
 		<?php for ($i = 0; $i < count($pageData); $i++) {?>
 			<div>
-				<h2><?php echo($pageData[$i]["title"]); ?></h2>
+				<a href="?p=<?php echo($pageData[$i]["id"]); ?>">
+					<h2><?php echo($pageData[$i]["title"]); ?></h2>
+				</a>
 			</div>
 			<div>
-				<?php echo($pageData[$i]["content"]); ?>
+				<?php echo ($pageData[$i]["content"]); ?>
 			</div>
 			<div style="width:50%; display: inline-block">
 				Категория: <?php echo($pageData[$i]["category"]); ?>
