@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="7a78a66f-8353-45bc-8a3c-40e5b949558e" name="MAMP Apache" url="http://sblog.yav:8888">
+        <fileTransfer mountedRoot="$PROJECT_DIR$" accessType="MOUNT" />
+      </webServer>
+      <webServer id="3ef13128-2ac8-4bbf-96f6-ff5545db6453" name="stat.yatsukav.com" url="http://stat.yatsukav.com">
+        <fileTransfer host="162.211.230.217" port="29261" rootFolder="/var/www/stat.yatsukav.com/webapps" accessType="SFTP" username="raceliy">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
